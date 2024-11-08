@@ -1,7 +1,6 @@
 import os
 import random
 
-
 def bienvenida():
     print("BIENVENIDO AL JUEGO DE SUDOKU ! \n\n")
     print("Instrucciones: \n")
@@ -70,9 +69,6 @@ def llenar(matriz):
     return True
     #return matriz
 
-
-
-
 def borrar(matriz1, matriz2, dificultad):
     cantidad = 0
     # Copiar los contenidos de matriz_original a matriz_copiada
@@ -93,6 +89,7 @@ def borrar(matriz1, matriz2, dificultad):
     
     volados = 0  # Inicializar fuera del bucle for
     while volados < diferencia:
+        
         posicion_fila = random.randint(0, 8)
         posicion_columna = random.randint(0, 8)
         
@@ -102,17 +99,4 @@ def borrar(matriz1, matriz2, dificultad):
             volados += 1
 
     return matriz2
-
-
-
-        
-            
-    
-
-
-
-
-
-
-
 
