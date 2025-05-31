@@ -13,7 +13,8 @@ Functions.bienvenida()
 dificultad = int(input("Ingrese la dificultad del juego (facil(1), medio (2), dificil (3) ): "))
 
 while dificultad not in [1, 2, 3]:
-    dificultad = int(input("Ingrese la dificultad del juego (facil(1), medio (2), dificil (3) ): "))
+    dificultad = int(input("Ingrese la dificultad valida  del juego (facil(1), medio (2), dificil (3) ): "))
+    os.system('cls')
 
 
 
@@ -48,15 +49,15 @@ while tablero_resuelto != tablero_jugador  :
     columna=int(input("Ingrese la columna en la que desea colocar el numero: "))
     columna=columna-1
     while columna not in range(0,8):
-        columna=int(input("Ingrese la columna en la que desea colocar el numero: "))
-        columna=columna-1
+        columna=int(input("Ingrese la columna en la que desea colocar el numero: "))     
+        columna=columna-1 
     
     while tablero_jugador[fila][columna] != 0:
         os.system('cls')
         print("Esta casilla ya esta ocupada, por favor seleccione otra")
         fila=int(input("Ingrese la fila en la que desea colocar el numero: "))
         while fila not in range(0,8):
-            fila=int(input("Ingrese la fila en la que desea colocar el numero: "))
+            fila=int(input("Ingrese la fila en la que desea colocar el numero: ")) 
             fila=fila-1
         columna=int(input("Ingrese la columna en la que desea colocar el numero: "))
         while columna not in range(0,8):
@@ -77,25 +78,3 @@ while tablero_resuelto != tablero_jugador  :
         
         tablero_jugador[fila][columna] = 0
     Functions.impresion(tablero_jugador)
-    
-    
-
-    
-        
-        
-    
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
- 
